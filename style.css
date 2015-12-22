@@ -1,0 +1,41 @@
+* {
+	font-family: 'Asap', sans-serif;;
+}
+
+.icon {
+	max-width: 25px;
+	min-width: 25px;
+}
+
+.date {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#footer_sentence {
+	font-size: 10px;
+}
+
+#credits {
+	font-size: 10px;
+}
+
+.timeline_item {
+	padding-top: 5px;
+}
+
+.timeline_note {
+	margin-left: 90px;
+	margin-top: -10px;
+	margin-bottom: -8px;
+}
+
+.contact {
+	max-width: 50px;
+}
+
+.project_img {
+	max-width: 100px;
+}
