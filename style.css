@@ -1,10 +1,31 @@
 * {
-	font-family: 'Asap', sans-serif;;
+	font-family: 'Asap', sans-serif;
+}
+
+ul {
+	margin-bottom: 10px;
+}
+
+h3 {
+	padding-bottom: -5px;
+	margin-bottom: -5px;
+	padding-top: 10px;
 }
 
 .icon {
 	max-width: 25px;
-	min-width: 25px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.star {
+	max-width: 50px;
+	vertical-align: baseline;	
+}
+
+#test {
+	line-height: .2;
+	padding-bottom: -5px;
 }
 
 .date {
@@ -36,6 +57,65 @@
 	max-width: 50px;
 }
 
+#project_grid {
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  width: 70%;
+  color: white;
+  list-style-type: none;   
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#project_grid li {
+  width: 32.66666%;
+  float: left;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin-left: 1%;
+}
+
+#project_grid li:nth-child(3n+1) {
+  clear: left;
+  margin-left: 0;
+}
+
+figure {
+	position: relative;
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+}
+
+/*figure:hover figcaption {
+	height: 75px;
+	line-height: 12px;
+}*/ 
+/* why doesn't that work? why do i have to do the CSS in javascript? */
+
 .project_img {
-	max-width: 100px;
+  width: 100%;
+	display: block;
+}
+
+figcaption {
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, .7);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 5px;
+  box-sizing: border-box;
+}
+
+
+
+.moreinfo {
+	display: none;
 }
