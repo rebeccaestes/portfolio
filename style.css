@@ -29,7 +29,7 @@ h1 {
 	padding-left: 15%;
 	font-size: 2.5em;
 	top: 0;
-	border-bottom: 1px solid black;
+	/*border-bottom: 1px solid black;*/
 
 }
 
@@ -120,7 +120,8 @@ h3 {
 .contact {
 	height: 50px;
 	padding: 1%;
-	max-width: 50px;
+	max-width: 100px;
+	/*text-align: center;*/
 	/*width: 100%;*/
 }
 
@@ -219,10 +220,25 @@ figcaption {
 	display: none;
 }
 
+#contact {
+  list-style-type: none;
+  border-right, border-bottom: 1px solid black;
+  height: 230px;
+  width: 60px;
+  position: fixed;
+  margin-top: 10%;
+  float: left;
+  top: 0px;
+  background-color: rgba(11, 128, 178, .8);
+  padding: 1%;
 
+}
+
+
+/*
 #contact {
 	border-top: 1px solid black;
-	/*display: none;*/
+	display: none;
 	height: 50px;
 	text-align: center;
 	position: fixed;
@@ -230,5 +246,5 @@ figcaption {
 	width: 100%;
 	background-color: rgba(11, 128, 178, .8);
 	padding-bottom: 2%;
-	/*margin: 0 auto;*/
-}
+	margin: 0 auto; 
+	} */
