@@ -23,7 +23,7 @@ header {
 	padding-bottom: 65.66%;
 	color: mintcream;
   text-shadow: 0 1px 1px black;
-  background-image: url("icons/0kitten.jpg");
+  background-image: url("image/kitten.jpg");
   background-repeat: no-repeat;
 	background-position: 10% center;
 	background-size: cover;
@@ -57,7 +57,7 @@ nav a {
 .container {
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 10px;
+	margin-bottom: 0;
 }
 
 .normal {
@@ -67,7 +67,7 @@ nav a {
 .wide {
 	max-width: 750px;
 	margin-top: 30px;
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 }
 
 h2 {
@@ -163,25 +163,14 @@ figure {
   width: 100%;
 	display: block;
 	/*border: 2px solid rgb(11, 128, 178);*/
-	border: 2px solid #99004c;;
+	border: 2px solid #99004c;
 	border-radius: 10px;
-
+	box-sizing: border-box;
 }
 
-/*figcaption {
-	font-family: 'Lato', sans-serif;
-  text-decoration: none;
-  font-size: 12px;
-  background-color: rgba(0, 0, 0, .7);
-	color: mintcream;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  line-height: 1em;
-  padding-left: 5px;
-  box-sizing: border-box;
-  padding: 5%;
-}*/
+.project_img:hover {
+	border: 2px solid black;
+}
 
 .project_about {
 	float: left;
@@ -190,10 +179,20 @@ figure {
 	box-sizing: border-box;
 }
 
+.project_repo {
+	text-align: center;
+	font-size: 48px;
+	line-height: 10px;
+	color: #99004c;
+	margin-top: 10px;
+}
+
 h5 {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	color: #99004c;
+	/* why is this purple??*/
+	/* actually, I really like that color ... */
 	font-size: 16px;
 }
 
