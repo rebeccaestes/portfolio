@@ -8,12 +8,6 @@ body {
 
 /*BLUE COLOR: 	background-color: rgba(11, 128, 178, .8);*/
 
-#head {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 600px;
-}
-
 header {
 	padding: 15px;
 	margin-top: 0;
@@ -28,48 +22,75 @@ header {
 	background-position: 10% center;
 	background-size: cover;
 	box-sizing: border-box;
+	position: relative;
+}
+
+#head {
+  width: 60%;
+  position: absolute;
+  right: 0;
+  bottom: 40%;
+}
+
+a, a:visited {
+	color: #551DA2;
 }
 
 h1 {
 	font-size: 2.5em;
 	margin: 0;
-	display: inline-block;
-	vertical-align: baseline;
 	padding: 0;
-	position: relative;
-	margin-top: 140px;
-	margin-left: 200px;
 }
 
 nav {
 	font-size: 26px;
-	position: absolute;
-	right: 10%;
-	top: 1.15em;
-	display: inline-block;
-	margin-top: 210px;
-	margin-right: 110px;
 }
 
-nav a {
+nav a, nav a:visited {
 	color: mintcream;
+}
+
+@media (max-width: 600px) {
+	#head {
+		width: 70%;
+	}
+}
+
+@media (max-width: 500px) {
+	h1 {
+		font-size: 1.5em;
+	}
+	nav {
+		font-size: 20px;
+	}
 }
 
 .container {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 0;
-}
-
-.normal {
 	max-width: 600px;
 }
 
-.wide {
+@media (max-width: 640px) {
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+/*.wide {
 	max-width: 750px;
 	margin-top: 30px;
 	margin-bottom: 10px;
 }
+
+@media (max-width: 790px) {
+	.wide {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}*/
 
 h2 {
 	margin-top: 10%;
@@ -111,13 +132,27 @@ a:hover {
 }
 
 .timeline_note {
-	margin-left: 15%;
+	margin-left: 90px;
 	margin-top: 0.5%;
 	margin-bottom: 0;
 }
 
 #exclamation {
 	color: #99004c;
+}
+
+@media (max-width: 630px) {
+	.date {
+		text-align: left;
+		display: block;
+	}
+	.timeline_item {
+		padding-top: 15px;
+	}
+	.timeline_note {
+		margin-left: 0;
+		padding-left: 1.25em;
+	}
 }
 
 .icon {
@@ -142,17 +177,19 @@ a:hover {
   overflow: hidden;
   list-style-type: none; 
   padding: 0;  
+  margin-top: 25px;
 }
 
 #project_grid li {
   box-sizing: border-box;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   clear: both;
   overflow: hidden;
+  padding-top: 20px;
 }
 
 figure {
-	width: 45%;
+	width: 50%;
 	position: relative;
   margin: 0;
   padding-left: 0;
@@ -177,7 +214,7 @@ figure {
 .project_about {
 	float: left;
 	width: 40%;
-	margin-left: 15%;
+	margin-left: 1em;
 	box-sizing: border-box;
 }
 
@@ -187,15 +224,31 @@ figure {
 	line-height: 10px;
 	margin-top: 10px;
 	color: purple;
-/* I really liked the visited link color when this was set to red, it was a dark purple. but my chrome extension thought it was black. how to find?? */
+	margin-bottom: 0px;
 }
 
+@media (max-width: 585px) {
+	.project_about
+	{
+		float: none;
+		width: 100%;
+	}
+	figure {
+		float: none;
+		width: 100%;
+	}
+}
 
 h5 {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	color: #99004c;
 	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+h5 + p {
+	margin-top: 0px;
 }
 
 footer {
