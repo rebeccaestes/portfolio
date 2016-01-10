@@ -16,7 +16,7 @@ header {
 	overflow: hidden;
 	padding-bottom: 65.66%;
 	color: mintcream;
-  text-shadow: 0 1px 1px black;
+  /*text-shadow: 0 1px 1px black;*/
   background-image: url("image/kitten.jpg");
   background-repeat: no-repeat;
 	background-position: 10% center;
@@ -160,7 +160,6 @@ a:hover {
 	vertical-align: middle;
 	display: inline-block;
 	font-size: 20px;
-	/*color: rgba(11, 83, 148)*/
 }
 
 .star {
@@ -200,7 +199,6 @@ figure {
 .project_img {
   width: 100%;
 	display: block;
-	/*border: 2px solid rgb(11, 128, 178);*/
 	border: 2px solid grey;
 	border-radius: 10px;
 	box-sizing: border-box;
@@ -208,13 +206,12 @@ figure {
 
 .project_img:hover {
 	border: 2px solid black;
-	/*border: none;*/
 }
 
 .project_about {
 	float: left;
-	width: 40%;
-	margin-left: 1em;
+	width: 45%;
+	margin-left: 5%;
 	box-sizing: border-box;
 }
 
