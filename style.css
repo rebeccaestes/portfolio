@@ -12,17 +12,17 @@ header {
 	padding: 15px;
 	margin-top: 0;
 	width: 100%;
-	height: 0;
 	overflow: hidden;
-	padding-bottom: 65.66%;
 	color: mintcream;
-  /*text-shadow: 0 1px 1px black;*/
+  text-shadow: 0 1px 1px black;
   background-image: url("image/kitten.jpg");
   background-repeat: no-repeat;
-	background-position: 10% center;
+	background-position: bottom center;
 	background-size: cover;
 	box-sizing: border-box;
 	position: relative;
+	max-height: calc(100vh - 8rem);
+	height: 620px;
 }
 
 #head {
@@ -50,6 +50,18 @@ nav a, nav a:visited {
 	color: mintcream;
 }
 
+@media (min-width: 800px) {
+	#head {
+		bottom: 15rem;
+	}
+}
+
+@media (min-width: 1100px) {
+	#head {
+		bottom: 18rem;
+	}
+}
+
 @media (max-width: 600px) {
 	#head {
 		width: 70%;
@@ -58,10 +70,19 @@ nav a, nav a:visited {
 
 @media (max-width: 500px) {
 	h1 {
-		font-size: 1.5em;
+		font-size: 1.75em;
 	}
 	nav {
 		font-size: 20px;
+	}
+	header {
+		background-position: 30%;
+	}
+}
+
+@media (max-width: 350px) {
+	h1 {
+		font-size: 1.5em;
 	}
 }
 
@@ -79,18 +100,6 @@ nav a, nav a:visited {
 	}
 }
 
-/*.wide {
-	max-width: 750px;
-	margin-top: 30px;
-	margin-bottom: 10px;
-}
-
-@media (max-width: 790px) {
-	.wide {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-}*/
 
 h2 {
 	margin-top: 10%;
@@ -247,6 +256,17 @@ h5 {
 
 h5 + p {
 	margin-top: 0px;
+}
+
+#skills span {
+	color: mintcream;
+	/*color: #99004c;*/
+	background-color: rgba(11, 128, 178, .8);
+	padding: 4px;
+	border-radius: 4px;
+	font-family: "Lato", sans-serif;
+	margin-left: 1px;
+	line-height: 2em;
 }
 
 footer {
