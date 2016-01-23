@@ -100,18 +100,31 @@ nav a, nav a:visited {
 	}
 }
 
+#headshot {
+	width: 300px;
+	border-radius: 15px;
+	float: left;
+	display: block;
+	margin-bottom: 15px;
+	border: 2px solid #99004c;
+}
 
 h2 {
 	margin-top: 10%;
 	color: #99004c;
 	font-family: "Lato", sans-serif;
-	font-size: 22px;
+	font-size: 24px;
+	display: block;
+	float: right;
+	width: 270px;
+	margin-top: 30px;
 }
 
 h3 {
 	font-family: "Lato", sans-serif;	
 	font-weight: normal;
 	font-size: 18px;
+	clear: both;
 }
 
 h4 {
