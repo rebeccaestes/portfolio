@@ -3,7 +3,9 @@ body {
   margin: 0;
   line-height: 1.5;
   font-size: 16px;
-  background-color: mintcream; }
+  background-color: mintcream; 
+  z-index: 5;
+}
 
 /*BLUE COLOR: 	background-color: rgba(11, 128, 178, .8);*/
 header {
@@ -200,7 +202,11 @@ figure {
   display: block;
   border: 2px solid grey;
   border-radius: 10px;
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+/*  &:hover {
+      border: 2px solid black; 
+  }*/
+}
 
 .project_img:hover {
   border: 2px solid black; }
@@ -214,7 +220,8 @@ figure {
     .project_about {
       float: none;
       width: 100%;
-      margin-left: 0; } }
+      margin-left: 0; } 
+}
 
 .project_repo {
   text-align: center;
@@ -251,3 +258,29 @@ footer {
   text-align: right; }
 
 /*# sourceMappingURL=style.css.map */
+
+/* NEED TO GET THIS STUFF INTO SASS????? */
+
+.fa-plus-square {
+  font-size: 16px;
+}
+
+.fa-plus-square:hover {
+  color: #99004c;
+}
+
+.more_popup {
+  display: none;
+  /*top: 20%;*/
+  position: absolute;
+  width: 40%;
+  left: 20%;
+  right: 20%;
+  padding: 1%;
+  z-index: 99;
+  font-family: "Lato", sans-serif;
+  background-color: grey;
+  /*text-align: center;*/
+  color: navy;
+  border: 1px solid blue;
+}
