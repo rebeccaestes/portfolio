@@ -5,8 +5,11 @@ $(document).ready(function(){
 
 		console.log($(e.target).parent('p'));
 		$('.more_popup').hide();
+		// $(e.target).closest(".fa-github").find(".more_popup").show();
 		$(e.target).closest(".project_about").find(".more_popup").show();
 		// $(body).fade
+		// var moreText = $(".more_popup").text;
+		// $(".project_repo").text = moreText;
 	})
 
 

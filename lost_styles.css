@@ -3,50 +3,67 @@ body {
   margin: 0;
   line-height: 1.5;
   font-size: 16px;
-  background-color: mintcream; }
+  background-color: mintcream; 
+  z-index: 5;
+}
 
 /*BLUE COLOR: 	background-color: rgba(11, 128, 178, .8);*/
 header {
+  padding: 15px;
   margin-top: 0;
   width: 100%;
   overflow: hidden;
-  color: #99004c;
-  text-shadow: 0 1px 2px mintcream;
+  color: mintcream;
+  text-shadow: 0 1px 1px black;
   background-image: url("image/triangle.png");
+  background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
   box-sizing: border-box;
   position: relative;
-  height: 400px; }
+  max-height: calc(100vh - 8rem);
+  height: 620px; }
+  @media (max-width: 500px) {
+    header {
+      background-position: 30%; } }
 
 #head {
-  max-width: 600px;
-  margin: 100px auto; }
-
-#headshot {
-  width: 200px;
-  float: left;
-  border-radius: 15px;
-  border: 2px solid black;
-  margin-right: 50px; }
-
-h1 {
-  margin: 0;
-  font-size: 42px;
-  padding-top: 50px; }
-
-nav {
-  display: block;
-  font-size: 26px; }
-  nav a, nav a:visited {
-    color: slategrey; }
-  nav a:hover {
-    color: #99004c; }
+  width: 60%;
+  position: absolute;
+  right: 0;
+  bottom: 40%; }
+  @media (min-width: 800px) {
+    #head {
+      bottom: 15rem; } }
+  @media (min-width: 1100px) {
+    #head {
+      bottom: 18rem; } }
+  @media (max-width: 600px) {
+    #head {
+      width: 70%; } }
 
 a, a:visited {
   color: #085d82; }
-  a:hover, a:visited:hover {
-    text-decoration: none; }
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+  padding: 0; }
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 1.75em; } }
+  @media (max-width: 350px) {
+    h1 {
+      font-size: 1.5em; } }
+
+nav {
+  font-size: 26px; }
+  @media (max-width: 500px) {
+    nav {
+      font-size: 20px; } }
+
+nav a, nav a:visited {
+  color: mintcream; }
 
 .container {
   margin-left: auto;
@@ -58,6 +75,20 @@ a, a:visited {
     .container {
       padding-left: 20px;
       padding-right: 20px; } }
+
+#headshot {
+  width: 200px;
+  border-radius: 15px;
+  float: left;
+  display: block;
+  margin-bottom: 15px;
+  border: 2px solid black; }
+  @media (max-width: 625px) {
+    #headshot {
+      float: none;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 20px; } }
 
 h2 {
   margin-top: 10%;
@@ -74,8 +105,14 @@ h3 {
   float: right;
   width: 60%;
   margin-top: 0%;
-  padding-bottom: 0;
-  margin-bottom: 0; }
+  padding-bottom: 5%;
+  border-bottom: 2px solid #99004c; }
+  @media (max-width: 625px) {
+    h3 {
+      float: none;
+      width: 100%;
+      border: none;
+      padding-bottom: 0; } }
 
 h4 {
   font-family: "Lato", sans-serif;
@@ -84,6 +121,9 @@ h4 {
   font-size: 20px;
   border-bottom: 1px solid #0b80b2;
   margin-top: 5%; }
+
+a:hover {
+  text-decoration: none; }
 
 .timeline_item {
   padding-top: 5px; }
@@ -142,10 +182,11 @@ h4 {
   overflow: hidden;
   padding-top: 20px; }
 
+.project_repo .fa-github {
+  color: #074c6a; }
+
 figure {
-  width: 60%;
-  display: block;
-  margin: 0 auto;
+  width: 50%;
   position: relative;
   margin: 0;
   padding-left: 0;
@@ -159,44 +200,36 @@ figure {
 .project_img {
   width: 100%;
   display: block;
-  border: 2px solid slategrey;
+  border: 2px solid grey;
   border-radius: 10px;
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+/*  &:hover {
+      border: 2px solid black; 
+  }*/
+}
 
-figcaption {
-  background: #0b80b2;
-  width: 25%;
-  line-height: 1;
-  font-size: 16px;
-  position: absolute;
-  left: 75%;
-  bottom: 0;
-  text-align: right;
-  font-size: 36px;
-  position: absolute;
-  padding: 0;
-  border-radius: 0px 0px 10px 0px;
-  box-sizing: border-box;
-  border: 2px solid slategrey; }
-
-.fa-github, .fa-link {
-  width: 1em;
-  text-align: center; }
-  .fa-github a, .fa-link a {
-    color: #0b80b2; }
-  .fa-github:hover, .fa-link:hover {
-    color: #99004c; }
+.project_img:hover {
+  border: 2px solid black; }
 
 .project_about {
   float: left;
-  width: 38%;
+  width: 48%;
   margin-left: 2%;
   box-sizing: border-box; }
   @media (max-width: 585px) {
     .project_about {
       float: none;
       width: 100%;
-      margin-left: 0; } }
+      margin-left: 0; } 
+}
+
+.project_repo {
+  text-align: center;
+  font-size: 48px;
+  line-height: 10px;
+  margin-top: 10px;
+  color: purple;
+  margin-bottom: 0px; }
 
 h5 {
   letter-spacing: 2px;
@@ -207,21 +240,6 @@ h5 {
 
 h5 + p {
   margin-top: 0px; }
-
-.more_popup {
-  display: none;
-  /*top: 20%;*/
-  position: absolute;
-  width: 40%;
-  left: 20%;
-  right: 20%;
-  padding: 1%;
-  z-index: 99;
-  font-family: "Lato", sans-serif;
-  background-color: slategrey;
-  /*text-align: center;*/
-  color: navy;
-  border: 1px solid blue; }
 
 #skills span {
   color: mintcream;
@@ -240,3 +258,29 @@ footer {
   text-align: right; }
 
 /*# sourceMappingURL=style.css.map */
+
+/* NEED TO GET THIS STUFF INTO SASS????? */
+
+.fa-plus-square {
+  font-size: 16px;
+}
+
+.fa-plus-square:hover {
+  color: #99004c;
+}
+
+.more_popup {
+  display: none;
+  /*top: 20%;*/
+  position: absolute;
+  width: 40%;
+  left: 20%;
+  right: 20%;
+  padding: 1%;
+  z-index: 99;
+  font-family: "Lato", sans-serif;
+  background-color: grey;
+  /*text-align: center;*/
+  color: navy;
+  border: 1px solid blue;
+}
