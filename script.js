@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
 	$(".more").click(function(e) {
-		// console.log(e.target);
-		// console.log($(e.target).parent('div'))
-		// debugger;
+		// console.log($(e.target));
+
+		console.log($(e.target).parent('p'));
 		$('.more_popup').hide();
 		$(e.target).closest(".project_about").find(".more_popup").show();
 		// $(body).fade
