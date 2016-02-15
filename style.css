@@ -5,7 +5,6 @@ body {
   font-size: 16px;
   background-color: mintcream; }
 
-/*BLUE COLOR: 	background-color: rgba(11, 128, 178, .8);*/
 header {
   margin-top: 0;
   width: 100%;
@@ -44,9 +43,10 @@ nav {
     color: #99004c; }
 
 a, a:visited {
-  color: #085d82; }
+  color: #99004c;
+  text-decoration: none; }
   a:hover, a:visited:hover {
-    text-decoration: none; }
+    text-decoration: underline; }
 
 .container {
   margin-left: auto;
@@ -71,8 +71,6 @@ h3 {
   font-family: "Lato", sans-serif;
   font-weight: normal;
   font-size: 18px;
-  float: right;
-  width: 60%;
   margin-top: 0%;
   padding-bottom: 0;
   margin-bottom: 0; }
@@ -143,60 +141,55 @@ h4 {
   padding-top: 20px; }
 
 figure {
-  width: 60%;
+  width: 55%;
+  border-radius: 10px;
   display: block;
   margin: 0 auto;
   position: relative;
   margin: 0;
   padding-left: 0;
+  margin-right: 25px;
   float: left;
-  margin-bottom: 15px; }
-  @media (max-width: 585px) {
-    figure {
-      float: none;
-      width: 100%; } }
+  margin-bottom: 15px;
+  overflow: hidden;
+  border: 2px solid slategrey;
+  box-sizing: border-box; }
+  figure:hover {
+    border: 2px solid black; }
+    figure:hover figcaption {
+      opacity: 1;
+      right: 0; }
 
 .project_img {
   width: 100%;
-  display: block;
-  border: 2px solid slategrey;
-  border-radius: 10px;
-  box-sizing: border-box; }
+  display: block; }
 
 figcaption {
-  background: #0b80b2;
+  opacity: 0;
+  transition: .5s linear all;
+  background: rgba(169, 179, 189, 0.8);
   width: 25%;
   line-height: 1;
   font-size: 16px;
   position: absolute;
-  left: 75%;
+  right: -100px;
   bottom: 0;
   text-align: right;
   font-size: 36px;
   position: absolute;
-  padding: 0;
-  border-radius: 0px 0px 10px 0px;
-  box-sizing: border-box;
-  border: 2px solid slategrey; }
+  padding: 1%;
+  box-sizing: border-box; }
 
 .fa-github, .fa-link {
+  color: mintcream;
   width: 1em;
   text-align: center; }
-  .fa-github a, .fa-link a {
-    color: #0b80b2; }
   .fa-github:hover, .fa-link:hover {
     color: #99004c; }
 
-.project_about {
-  float: left;
-  width: 38%;
-  margin-left: 2%;
-  box-sizing: border-box; }
-  @media (max-width: 585px) {
-    .project_about {
-      float: none;
-      width: 100%;
-      margin-left: 0; } }
+.fa-plus-square:hover, .fa-minus-square:hover {
+  color: #99004c;
+  cursor: pointer; }
 
 h5 {
   letter-spacing: 2px;
@@ -208,20 +201,8 @@ h5 {
 h5 + p {
   margin-top: 0px; }
 
-.more_popup {
-  display: none;
-  /*top: 20%;*/
-  position: absolute;
-  width: 40%;
-  left: 20%;
-  right: 20%;
-  padding: 1%;
-  z-index: 99;
-  font-family: "Lato", sans-serif;
-  background-color: slategrey;
-  /*text-align: center;*/
-  color: navy;
-  border: 1px solid blue; }
+.more_about {
+  display: none; }
 
 #skills span {
   color: mintcream;
