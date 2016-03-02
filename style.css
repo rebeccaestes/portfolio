@@ -168,7 +168,7 @@ figcaption {
   opacity: 0;
   transition: .5s linear all;
   background: rgba(169, 179, 189, 0.8);
-  width: 25%;
+  width: 30%;
   line-height: 1;
   font-size: 16px;
   position: absolute;
@@ -179,6 +179,9 @@ figcaption {
   position: absolute;
   padding: 1%;
   box-sizing: border-box; }
+  @media (max-width: 640px) {
+    figcaption {
+      width: 15%; } }
 
 .fa-github, .fa-link {
   color: mintcream;
