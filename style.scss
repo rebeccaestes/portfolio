@@ -11,6 +11,7 @@ body {
 	line-height: 1.5;
 	font-size: 16px;
 	background-color: $bg-color;
+	z-index: 12;
 }
 
 header {
@@ -134,6 +135,52 @@ h4 {
 	@media (max-width: 630px) {
 		margin-left: 0;
 		padding-left: 1.25em;
+	}
+}
+
+.kitten-container {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	max-width: 600px;
+	clear: both;
+	@media (max-width: 640px) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+.kitten {
+	display: none;
+	position: absolute;
+	z-index: 199;
+	border: 3px solid $border-color;
+	border-radius: 5px;
+	box-shadow: 0 0 15px grey;
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%, -50%);
+	background-color: white;
+	width: 90%;
+}
+
+.kitten-img {
+	width: 100%;
+}
+
+.kitten-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 20px;
+	width: 20px;
+	padding: 2px;
+	text-align: center;
+	background-color: $border-color;
+	color: white;
+	&:hover {
+		color: $emphasis-color;
 	}
 }
 

@@ -3,7 +3,8 @@ body {
   margin: 0;
   line-height: 1.5;
   font-size: 16px;
-  background-color: mintcream; }
+  background-color: mintcream;
+  z-index: 12; }
 
 header {
   margin-top: 0;
@@ -109,6 +110,47 @@ h4 {
     .timeline_note {
       margin-left: 0;
       padding-left: 1.25em; } }
+
+.kitten-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  max-width: 600px;
+  clear: both; }
+  @media (max-width: 640px) {
+    .kitten-container {
+      padding-left: 20px;
+      padding-right: 20px; } }
+
+.kitten {
+  display: none;
+  position: absolute;
+  z-index: 199;
+  border: 3px solid slategrey;
+  border-radius: 5px;
+  box-shadow: 0 0 15px grey;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 90%; }
+
+.kitten-img {
+  width: 100%; }
+
+.kitten-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  width: 20px;
+  padding: 2px;
+  text-align: center;
+  background-color: slategrey;
+  color: white; }
+  .kitten-close:hover {
+    color: #99004c; }
 
 #exclamation {
   color: #99004c; }
