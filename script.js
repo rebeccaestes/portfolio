@@ -10,7 +10,7 @@ $(document).ready(function(){
 		$(e.target).closest(".project_about").find(".more").fadeIn("slow");
 		$(e.target).closest(".project_about").find(".more_about").fadeOut("slow");
 		$(e.target).hide();
-		$(e.target).previous.show()
+		$(e.target).previous().show()
 
 	})
 
