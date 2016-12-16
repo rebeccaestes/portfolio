@@ -127,17 +127,38 @@ ul {
   margin-top: 5px; }
 
 a, a:visited {
-  color: rebeccapurple;
-  font-weight: bold; }
+  color: rebeccapurple; }
   a:hover, a:visited:hover {
     text-decoration: none; }
 
-.skills span {
-  background-color: lavender;
+.skills {
   line-height: 1.8em;
-  box-sizing: border-box;
-  border-radius: 5px;
-  padding: 2px 5px; }
+  margin-left: 20px; }
+  .skills:after {
+    content: "";
+    clear: both;
+    display: block; }
+  .skills .skill-section-title {
+    float: left;
+    font-weight: 400;
+    padding-right: 15px;
+    box-sizing: border-box;
+    width: 7em; }
+    @media (max-width: 600px) {
+      .skills .skill-section-title {
+        width: 100%; } }
+  .skills .skill-group {
+    width: calc(100% - 7em);
+    float: left;
+    margin-bottom: 10px; }
+    @media (max-width: 600px) {
+      .skills .skill-group {
+        width: 100%; } }
+    .skills .skill-group .skill {
+      background-color: lavender;
+      box-sizing: border-box;
+      border-radius: 5px;
+      padding: 2px 5px; }
 
 .project_grid {
   list-style-type: none;
