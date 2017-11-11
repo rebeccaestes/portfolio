@@ -294,4 +294,26 @@ footer {
   background-color: white;
   margin-top: 30px; }
 
+body.books h1 {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  font-size: 3em; }
+body.books .intro {
+  transform: skewX(40deg); }
+  body.books .intro .category {
+    transform: skewX(-40deg);
+    padding-bottom: 0; }
+    body.books .intro .category .intro-par {
+      color: mediumpurple;
+      margin-left: 0;
+      text-align: center; }
+body.books .category p {
+  margin: 60px 0 30px; }
+body.books .category ol li {
+  padding-bottom: 5px; }
+body.books .category .rating {
+  color: mediumpurple;
+  font-weight: 600; }
+
 /*# sourceMappingURL=style.css.map */
