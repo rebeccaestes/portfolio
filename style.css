@@ -294,24 +294,39 @@ footer {
   background-color: white;
   margin-top: 30px; }
 
-body.books h1 {
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  font-size: 3em; }
 body.books .intro {
   transform: skewX(40deg); }
   body.books .intro .category {
     transform: skewX(-40deg);
     padding-bottom: 0; }
+    body.books .intro .category .median {
+      margin: 20px auto;
+      display: block;
+      width: 200px; }
+    body.books .intro .category h1 {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      font-size: 3em; }
     body.books .intro .category .intro-par {
       color: mediumpurple;
-      margin-left: 0;
+      margin: 0;
       text-align: center; }
+    @media (max-width: 475px) {
+      body.books .intro .category h1 {
+        font-size: 2.0em; }
+      body.books .intro .category .intro-par {
+        margin: 15px 0; }
+      body.books .intro .category .median {
+        width: 125px; } }
 body.books .category p {
   margin: 60px 0 30px; }
-body.books .category ol li {
-  padding-bottom: 5px; }
+body.books .category ol + p {
+  margin-top: 30px; }
+body.books .category ol {
+  margin-bottom: 0; }
+  body.books .category ol li {
+    padding-bottom: 5px; }
 body.books .category .rating {
   color: mediumpurple;
   font-weight: 600; }

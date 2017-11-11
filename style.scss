@@ -373,13 +373,6 @@ footer {
 }
 
 body.books {
-	h1 {
-		// color: $med-emphasis;
-		text-align: center;
-		margin: 0 auto;
-		display: block;
-		font-size: 3em;
-	}
 	.intro {
 		transform: skewX(40deg);
 
@@ -387,19 +380,50 @@ body.books {
 		 	transform: skewX(-40deg);
 		 	padding-bottom: 0;
 
+		 	.median {
+		 		margin: 20px auto;
+		 		display: block;
+		 		width: 200px;
+		 	}
+
+		 	h1 {
+				text-align: center;
+				margin: 0 auto;
+				display: block;
+				font-size: 3em;
+			}
+
 		 	.intro-par {
 		 		color: $med-emphasis;
-		 		margin-left: 0;
+		 		margin: 0;
 		 		text-align: center;
 		 	}
+
+	 		@media (max-width: 475px) {
+	 			h1 {
+	 				font-size: 2.0em;
+	 			}
+	 			.intro-par {
+	 				margin: 15px 0;
+	 			}
+	 			.median {
+	 				width: 125px;
+	 			}
+	 		}
 		}
 	}
 	.category {
 		p {
 			margin: 60px 0 30px;
 		}
-		ol li {
-			padding-bottom: 5px;
+		ol + p {
+			margin-top: 30px;
+		}
+		ol {
+			margin-bottom: 0;
+			li {
+				padding-bottom: 5px;
+			}
 		}
 		.rating {
 			color: $med-emphasis;
