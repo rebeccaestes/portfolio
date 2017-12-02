@@ -270,14 +270,20 @@ figcaption {
 	p {
 		margin-top: 0;
 		padding-top: 0;
+	}	
+	@media (max-width: 800px) {
+		h3 {
+			margin-top: 0;
+		}
 	}
 	@media (max-width: 650px) { 
 		text-align: left;
 	}
 }
 
-.fa-github, .fa-link {
+.fa-github, .fa-link, .fa-search-plus {
 	color: grey;
+	cursor: pointer;
 	text-align: center;
 	width: 1em;
 
@@ -317,7 +323,7 @@ figcaption {
 	width: 100%;
 }
 
-.kitten {
+.kitten, .budget {
 	background-color: white;
 	border: 2px solid darkgrey;
 	border-radius: 2px;
@@ -332,7 +338,7 @@ figcaption {
 	z-index: 199;
 }
 
-.kitten-close {
+.kitten-close, .budget-close {
 	color: white;
 	cursor: pointer;
 	font-size: 20px;
@@ -345,6 +351,14 @@ figcaption {
 
 	&:hover {
 		color: $light-emphasis;
+	}
+}
+
+.budget-close {
+	color: black;
+
+	&:hover {
+		color: $med-emphasis;
 	}
 }
 
