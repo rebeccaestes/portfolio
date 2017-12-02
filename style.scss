@@ -14,13 +14,14 @@ body {
 }
 
 h1 {
+	box-sizing: border-box;
+	display: inline-block;
 	font-family: $headline-font;
 	font-size: 1.9em;
 	font-weight: 400;
-	display: inline-block;
-	box-sizing: border-box;
-	padding: 0;
 	margin-bottom: 0;
+	padding: 0;
+
 	@media (max-width: 725px) {
 		display: block;
 		margin-top: 0;
@@ -28,35 +29,35 @@ h1 {
 }
 
 h2 {
+	color: $emphasis-color;
+	display: inline-block;
 	font-family: $headline-font;
 	font-size: 1.6em;
 	font-weight: 300;
-	text-transform: uppercase;
 	letter-spacing: 3px;
-	color: $emphasis-color;
-	display: inline-block;
-	padding-bottom: 0;
+	text-transform: uppercase;
 	margin-bottom: 10px;
 	margin-top: 40px;
+	padding-bottom: 0;
 }
 
 h3 {
+	color: $emphasis-color;
 	font-family: $headline-font;
 	font-size: 1.2em;
 	font-weight: 400;
+	margin: 15px 0 10px;
 	text-align: right;
-	color: $emphasis-color;
-	margin: 15px 0;
-	@media (max-width: 550px) { 
+
+	@media (max-width: 650px) { 
 		text-align: left;
 	}
-	margin-bottom: 10px;
 }
 
 .category {
+	margin: 0 10%;
 	max-width: 750px;
 	padding-bottom: 50px;
-	margin: 0 10%;
 }
 
 .holder {
@@ -70,10 +71,11 @@ h3 {
 
 .intro {
 	background-color: $shaded-color;
+	margin: 0 auto;
+	padding: 50px 10px;
 	transform: skewX(30deg);
 	width: calc(100% - 200px);
-	padding: 50px 10px;
-	margin: 0 auto;
+
 	.category {
 		transform: skewX(-30deg);
 	}
@@ -83,6 +85,7 @@ h3 {
 	@media (max-width: 450px) {
 		transform: none;
 		padding: 50px 0;
+
 		h1 {
 			font-size: 1.8em;
 		}
@@ -96,26 +99,28 @@ h3 {
 }
 
 .median {
-	width: calc(100% - 345px);
-	max-width: 435px;
-	display: inline-block;
-	overflow: hidden;
 	border-bottom: 1px black dotted;
+	display: inline-block;
+	max-width: 435px;
+	overflow: hidden;
+	width: calc(100% - 345px);
+
 	@media (max-width: 725px) {
 		display: none;
 	}
 }
 
 .opener {
-	font-size: 1.4em;
-	font-weight: 400;
-	text-transform: none;
-	letter-spacing: 1px;
 	color: black;
 	display: block;
-	padding-top: 0;
+	font-size: 1.4em;
+	font-weight: 400;
+	letter-spacing: 1px;
 	margin-top: 0;
 	margin-left: 90px;
+	padding-top: 0;
+	text-transform: none;
+
 	@media (max-width: 600px) {
 		margin-left: 0;
 	}
@@ -124,8 +129,9 @@ h3 {
 .intro-par {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 300;
-	margin-top: 35px;
 	margin-left: 70px;
+	margin-top: 35px;
+
 	@media (max-width: 450px) {
 		margin-left: 0;
 	}
@@ -133,6 +139,7 @@ h3 {
 
 .content {
 	margin-left: 70px;
+
 	@media (max-width: 500px) { 
 		margin-left: 0;
 	}
@@ -149,53 +156,42 @@ h3 {
 
 ul {
 	list-style-type: circle;
-	padding-top: 0;
 	margin-top: 5px;
+	padding-top: 0;
 }
 
 a, a:visited {
 	color: $emphasis-color;
+
 	&:hover {
 		text-decoration: none;
 	}
 }
-
-// .skills span {
-// 	background-color: $light-emphasis;
-// 	line-height: 1.8em;
-// 	box-sizing: border-box;
-// 	border-radius: 5px;
-// 	padding: 2px 5px;
-// }
 
 .skills {
 	line-height: 1.8em;
 	margin-left: 20px;
 
 	&:after {
-		content: "";
 		clear: both;
+		content: "";
 		display: block;
 	}
 	.skill-section-title {
+		box-sizing: border-box;
 		float: left;
 		font-weight: 400;
-		// text-align: right;
 		padding-right: 15px;
-		box-sizing: border-box;
-		// padding-top: 10px;
-		// margin-top: 10px;
 		width: 7em;
 
 		@media (max-width: 600px) {
-			// text-align: left;
 			width: 100%;
 		}
 	}
 	.skill-group {
-		width: calc(100% - 7em);
 		float: left;
 		margin-bottom: 10px;
+		width: calc(100% - 7em);
 
 		@media (max-width: 600px) {
 			width: 100%;
@@ -203,8 +199,8 @@ a, a:visited {
 
 		.skill {
 			background-color: $light-emphasis;
-			box-sizing: border-box;
 			border-radius: 5px;
+			box-sizing: border-box;
 			padding: 2px 5px;
 		}
 	}
@@ -212,79 +208,80 @@ a, a:visited {
 
 .project_grid {
 	list-style-type: none; 
+  margin: 0; 
   overflow: hidden;
   padding: 0; 
-  margin: 0; 
+
  	li {
-	  overflow: hidden;
- 		clear: both;
 	  box-sizing: border-box;
+ 		clear: both;
+	  overflow: hidden;
 	  padding-bottom: 10px;
 	  padding-top: 20px;
 	}
 }
 
 figure {
-	width: 40%;
-	border-radius: 5px;
-	display: block;
-	position: relative;
-  float: right;
-  overflow: hidden;
-	box-sizing: border-box;
 	border: 1px solid grey;
+	border-radius: 5px;
+	box-sizing: border-box;
+	display: block;
+	float: right;
 	margin: 0 0 15px 25px;
-	@media (max-width: 550px) {
-		width: auto;
+	overflow: hidden;
+	position: relative;
+	width: 40%;
+
+	@media (max-width: 650px) {
 	 	float: none;
 	 	margin: 10px 0 10px 0;
+		width: auto;
 	}
-	&:hover {
-		figcaption {
-			opacity: 1;
-			left: 0;
-		}
+	&:hover figcaption {
+		left: 0;
+		opacity: 1;
 	}
 }
 
 .project_img {
-  width: 100%;
 	display: block;
+	width: 100%;
 }
 
 figcaption {
+	background-color: $light-emphasis;
+	bottom: 0;
+	box-sizing: border-box;
 	font-size: 36px;
 	text-align: left;
+	left: -100px;
   min-width: 55px;
-	background-color: $light-emphasis;
 	opacity: 0;
+	padding: 1%;
   position: absolute;
-  box-sizing: border-box;
-  padding: 1%;
-  left: -100px;
-  bottom: 0;
+  text-align: left;
   transition: .5s linear all;
 }
 
 .project_about {
 	font-size: 1.05em;
 	text-align: right;
+
 	p {
 		margin-top: 0;
 		padding-top: 0;
 	}
-	@media (max-width: 550px) { 
+	@media (max-width: 650px) { 
 		text-align: left;
 	}
 }
 
 .fa-github, .fa-link {
-	// color: $emphasis-color;
 	color: grey;
 	text-align: center;
 	width: 1em;
+
 	&:hover {
-		// color: $med-emphasis;
 		color: $emphasis-color;
 	}
 }
@@ -296,8 +293,8 @@ figcaption {
 
 .more_about {
 	display: none;
-	text-align: left;
 	font-size: 16px;
+	text-align: left;
 }
 
 .less {
@@ -307,16 +304,13 @@ figcaption {
 .kitten-link {
 	cursor: pointer;
 	text-decoration: underline;
+
 	&:hover {
 		text-decoration: none;
 	}
 }
 
 .photo-container {
-/*	@media (max-width: 640px) {
-		padding-left: 20px;
-		padding-right: 20px;
-	}*/
 }
 
 .photo {
@@ -325,29 +319,30 @@ figcaption {
 
 .kitten {
 	background-color: white;
-	width: 90%;
-	max-width: 600px;
-	transform: translate(-50%, -50%);
-	z-index: 199;
-	display: none;
-	position: fixed;
 	border: 2px solid darkgrey;
 	border-radius: 2px;
 	box-shadow: 0 0 15px grey;
-	top: 50%; 
+	display: none;
 	left: 50%; 
+	max-width: 600px;
+	position: fixed;
+	top: 50%; 
+	transform: translate(-50%, -50%);
+	width: 90%;
+	z-index: 199;
 }
 
 .kitten-close {
-	font-size: 20px;
-	text-align: center;
 	color: white;
 	cursor: pointer;
-	width: 20px;
-	position: absolute;
+	font-size: 20px;
 	padding: 2px;
-	top: 0;
+	position: absolute;
 	right: 0;
+	text-align: center;
+	top: 0;
+	width: 20px;
+
 	&:hover {
 		color: $light-emphasis;
 	}
@@ -355,10 +350,12 @@ figcaption {
 
 .contact {
 	margin-left: 30px;
+
 	a {
-		font-size: 24px;
 		color: darkgrey;
+		font-size: 24px;
 		padding-right: 1px;
+
 		&:hover {
 			color: $emphasis-color;
 		}
@@ -366,10 +363,10 @@ figcaption {
 }
 
 footer {
-	color: $emphasis-color;
-	text-align: right;
 	background-color: white;
+	color: $emphasis-color;
 	margin-top: 30px;
+	text-align: right;
 }
 
 body.books {
@@ -377,20 +374,19 @@ body.books {
 		transform: skewX(40deg);
 
 		.category {
+			padding-bottom: 0;
 		 	transform: skewX(-40deg);
-		 	padding-bottom: 0;
 
 		 	.median {
-		 		margin: 20px auto;
 		 		display: block;
+		 		margin: 20px auto;
 		 		width: 200px;
 		 	}
-
 		 	h1 {
-				text-align: center;
-				margin: 0 auto;
-				display: block;
+		 		display: block;
 				font-size: 3em;
+				margin: 0 auto;
+				text-align: center;
 			}
 
 		 	.intro-par {
@@ -421,6 +417,11 @@ body.books {
 		}
 		ol {
 			margin-bottom: 0;
+
+			@media (max-width: 500px) {
+				padding-left: 15px;
+			}
+
 			li {
 				padding-bottom: 5px;
 			}
