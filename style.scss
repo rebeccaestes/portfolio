@@ -307,7 +307,7 @@ figcaption {
 	display: none;
 }
 
-.kitten-link {
+.kitten-link, .ziggy-link {
 	cursor: pointer;
 	text-decoration: underline;
 
@@ -323,7 +323,7 @@ figcaption {
 	width: 100%;
 }
 
-.kitten, .budget {
+.kitten, .budget, .ziggy {
 	background-color: white;
 	border: 2px solid darkgrey;
 	border-radius: 2px;
@@ -338,7 +338,11 @@ figcaption {
 	z-index: 199;
 }
 
-.kitten-close, .budget-close {
+.ziggy {
+	height: 450px;
+}
+
+.kitten-close, .budget-close, .ziggy-close {
 	color: white;
 	cursor: pointer;
 	font-size: 20px;

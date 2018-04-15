@@ -15,6 +15,21 @@ $(document).ready(function(){
 		}) 
 	})
 
+	$(".ziggy-link").click(function(e) {
+		e.preventDefault();
+		$(".container").each(function() {
+			$(this).css("opacity", ".5");
+		});
+		$(".ziggy").fadeIn("slow");
+	})
+
+	$(".ziggy-close").click(function() {
+		$(".ziggy").fadeOut("slow");
+		$(".container").each(function() {
+			$(this).fadeTo("slow", 1)
+		}) 
+	})
+
 	$(".budget-zoom").click(function(e) {
 		e.preventDefault();
 		$(".container").each(function() {
