@@ -58,6 +58,12 @@ h3 {
 	margin: 0 10%;
 	max-width: 750px;
 	padding-bottom: 50px;
+
+	&.project-category {
+		@media (max-width: 750px) {
+			margin: 0 5%;
+		}
+	}
 }
 
 .holder {

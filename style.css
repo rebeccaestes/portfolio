@@ -44,6 +44,9 @@ h3 {
   margin: 0 10%;
   max-width: 750px;
   padding-bottom: 50px; }
+  @media (max-width: 750px) {
+    .category.project-category {
+      margin: 0 5%; } }
 
 .holder {
   background-color: mediumpurple;
