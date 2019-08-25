@@ -47,11 +47,6 @@ h3 {
 	font-size: 1.2em;
 	font-weight: 400;
 	margin: 15px 0 10px;
-	text-align: right;
-
-	@media (max-width: 650px) { 
-		text-align: left;
-	}
 }
 
 .category {
@@ -232,17 +227,17 @@ figure {
 	border-radius: 5px;
 	box-sizing: border-box;
 	display: block;
-	float: right;
-	margin: 0 0 15px 25px;
+	// float: right;
+	// margin: 0 0 15px 25px;
 	overflow: hidden;
 	position: relative;
-	width: 40%;
+	// width: 40%;
 
-	@media (max-width: 650px) {
-	 	float: none;
+	// @media (max-width: 650px) {
+	 	// float: none;
 	 	margin: 10px 0 10px 0;
-		width: auto;
-	}
+		// width: auto;
+	// }
 	&:hover figcaption {
 		left: 0;
 		opacity: 1;
@@ -271,20 +266,11 @@ figcaption {
 
 .project_about {
 	font-size: 1.05em;
-	text-align: right;
 
 	p {
 		margin-top: 0;
 		padding-top: 0;
 	}	
-	@media (max-width: 800px) {
-		h3 {
-			margin-top: 0;
-		}
-	}
-	@media (max-width: 650px) { 
-		text-align: left;
-	}
 }
 
 .fa-github, .fa-link, .fa-search-plus {
@@ -320,9 +306,6 @@ figcaption {
 	&:hover {
 		text-decoration: none;
 	}
-}
-
-.photo-container {
 }
 
 .photo {
