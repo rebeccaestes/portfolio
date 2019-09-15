@@ -70,7 +70,7 @@ h3 {
 	background-color: $shaded-color;
 }
 
-.intro {
+.intro, .outro {
 	background-color: $shaded-color;
 	margin: 0 auto;
 	padding: 50px 10px;
@@ -96,6 +96,16 @@ h3 {
 		.category {
 			transform: none;
 		}
+	}
+}
+
+.outro {
+	background-color: #fff;
+	transform: skewx(-30deg);
+	width: calc(100% - 100px);
+
+	.category {
+		transform: skewX(30deg);
 	}
 }
 
@@ -327,8 +337,8 @@ figcaption {
 	z-index: 199;
 }
 
-.ziggy {
-	height: 450px;
+.ziggy img {
+	display: block;
 }
 
 .kitten-close, .budget-close, .ziggy-close {
@@ -370,9 +380,9 @@ figcaption {
 }
 
 footer {
-	background-color: white;
+	// background-color: white;
 	color: $emphasis-color;
-	margin-top: 30px;
+	padding-top: 20px;
 	text-align: right;
 }
 
@@ -381,6 +391,7 @@ body.books {
 		transform: skewX(40deg);
 
 		.category {
+			opacity: 1;
 			padding-bottom: 0;
 		 	transform: skewX(-40deg);
 
@@ -437,5 +448,28 @@ body.books {
 			color: $med-emphasis;
 			font-weight: 600;
 		}
+	}
+}
+
+// new 
+section.hidden, .shaded-bg.hidden, footer.hidden, .holder-2.hidden {
+	opacity: 0;
+}
+
+.intro {
+	padding: 50px 0;
+	width: 100%;
+
+	&.done {
+		width: calc(100% - 200px);
+		padding: 50px 10px;
+
+		@media (max-width: 600px) {
+	    width: calc(100% - 100px);
+		}
+	}
+
+	section.category {
+		opacity: 0;
 	}
 }

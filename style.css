@@ -51,27 +51,34 @@ h3 {
 .shaded-bg {
   background-color: whitesmoke; }
 
-.intro {
+.intro, .outro {
   background-color: whitesmoke;
   margin: 0 auto;
   padding: 50px 10px;
   transform: skewX(30deg);
   width: calc(100% - 200px); }
-  .intro .category {
+  .intro .category, .outro .category {
     transform: skewX(-30deg); }
   @media (max-width: 600px) {
-    .intro {
+    .intro, .outro {
       width: calc(100% - 100px); } }
   @media (max-width: 450px) {
-    .intro {
+    .intro, .outro {
       transform: none;
       padding: 50px 0; }
-      .intro h1 {
+      .intro h1, .outro h1 {
         font-size: 1.8em; }
-      .intro .opener {
+      .intro .opener, .outro .opener {
         font-size: 1.3em; }
-      .intro .category {
+      .intro .category, .outro .category {
         transform: none; } }
+
+.outro {
+  background-color: #fff;
+  transform: skewx(-30deg);
+  width: calc(100% - 100px); }
+  .outro .category {
+    transform: skewX(30deg); }
 
 .median {
   border-bottom: 1px black dotted;
@@ -249,8 +256,8 @@ figcaption {
   width: 90%;
   z-index: 199; }
 
-.ziggy {
-  height: 450px; }
+.ziggy img {
+  display: block; }
 
 .kitten-close, .budget-close, .ziggy-close {
   color: white;
@@ -280,14 +287,14 @@ figcaption {
       color: rebeccapurple; }
 
 footer {
-  background-color: white;
   color: rebeccapurple;
-  margin-top: 30px;
+  padding-top: 20px;
   text-align: right; }
 
 body.books .intro {
   transform: skewX(40deg); }
   body.books .intro .category {
+    opacity: 1;
     padding-bottom: 0;
     transform: skewX(-40deg); }
     body.books .intro .category .median {
@@ -324,5 +331,20 @@ body.books .category ol {
 body.books .category .rating {
   color: mediumpurple;
   font-weight: 600; }
+
+section.hidden, .shaded-bg.hidden, footer.hidden, .holder-2.hidden {
+  opacity: 0; }
+
+.intro {
+  padding: 50px 0;
+  width: 100%; }
+  .intro.done {
+    width: calc(100% - 200px);
+    padding: 50px 10px; }
+    @media (max-width: 600px) {
+      .intro.done {
+        width: calc(100% - 100px); } }
+  .intro section.category {
+    opacity: 0; }
 
 /*# sourceMappingURL=style.css.map */
