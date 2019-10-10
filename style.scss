@@ -76,12 +76,12 @@ body.v2, body.books {
 		width: 100%;
 		z-index: 200;
 
-		@media (min-width: 1200px) {
-			border: 3px solid $primary-color;
-			height: calc(100vh - 40px);
-			top: 20px;
-		 	width: calc(100% - 40px);
-		}
+		// @media (min-width: 1200px) {
+		// 	border: 3px solid $primary-color;
+		// 	height: calc(100vh - 40px);
+		// 	top: 20px;
+		//  	width: calc(100% - 40px);
+		// }
 
 		.intro-text .what {
 			border-right: 2px solid;
@@ -172,7 +172,7 @@ body.v2, body.books {
 		text-align: right;
 	}
 
-		@media (max-width: 600px) {
+	@media (max-width: 600px) {
 		.intro .intro-text {
 			.what, .where {
 				margin: 0;
@@ -193,6 +193,23 @@ body.v2, body.books {
 			h2 {
 				font-size: 1.3em;
 			}
+		}
+	}
+	@media (min-width: 1200px) {
+		section:not(.intro) {
+			height: auto;
+    	margin: 100px auto 150px;
+		}
+		.intro {
+			border: 3px solid $primary-color;
+			height: calc(100vh - 40px);
+			top: 20px;
+		 	width: calc(100% - 40px);
+		}
+		.contact-fixed {
+			padding-right: 5px;
+			right: 20px;
+			top: 20px;
 		}
 	}
 }

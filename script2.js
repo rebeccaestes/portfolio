@@ -48,7 +48,7 @@ $(document).ready(function(){
     let optionsShowcase = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.5
+      // threshold: 0
       // threshold: buildThresholdList()
     };
 

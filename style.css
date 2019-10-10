@@ -48,12 +48,6 @@ body.v2, body.books {
     top: 0;
     width: 100%;
     z-index: 200; }
-    @media (min-width: 1200px) {
-      body.v2 .intro, body.books .intro {
-        border: 3px solid slateblue;
-        height: calc(100vh - 40px);
-        top: 20px;
-        width: calc(100% - 40px); } }
     body.v2 .intro .intro-text .what, body.books .intro .intro-text .what {
       border-right: 2px solid;
       line-height: 1;
@@ -129,6 +123,19 @@ body.v2, body.books {
         font-size: 1.8em; }
       body.v2 .intro h2, body.books .intro h2 {
         font-size: 1.3em; } }
+  @media (min-width: 1200px) {
+    body.v2 section:not(.intro), body.books section:not(.intro) {
+      height: auto;
+      margin: 100px auto 150px; }
+    body.v2 .intro, body.books .intro {
+      border: 3px solid slateblue;
+      height: calc(100vh - 40px);
+      top: 20px;
+      width: calc(100% - 40px); }
+    body.v2 .contact-fixed, body.books .contact-fixed {
+      padding-right: 5px;
+      right: 20px;
+      top: 20px; } }
 
 body.books .intro .intro-par {
   color: slateblue;
