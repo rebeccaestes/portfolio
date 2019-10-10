@@ -3,74 +3,15 @@ body.v2, body.books {
   font-size: 18px;
   font-weight: 300;
   margin: 0; }
-  body.v2 .triangle, body.books .triangle {
-    background: rebeccapurple;
-    height: 100vh;
-    position: absolute;
-    transition: .75s ease-in-out all;
-    position: absolute;
-    width: 500px;
-    z-index: 10000; }
-    body.v2 .triangle.triangle-left, body.books .triangle.triangle-left {
-      transform: skew(30deg) translateX(-75%); }
-    body.v2 .triangle.triangle-right, body.books .triangle.triangle-right {
-      right: 0;
-      transform: skew(30deg) translateX(63%); }
-    body.v2 .triangle.hidden, body.books .triangle.hidden {
-      background: #fff; }
-      body.v2 .triangle.hidden + .intro, body.books .triangle.hidden + .intro {
-        border: none; }
-  body.v2 .intro, body.books .intro {
-    background: linear-gradient(-45deg, rgba(235, 230, 250, 0.7) 50%, rgba(100, 149, 237, 0.7) 100%);
-    box-sizing: border-box;
-    border: 3px solid slateblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: calc(100vh - 40px);
-    margin: 0 auto;
-    position: relative;
-    top: 20px;
-    width: calc(100% - 40px);
-    z-index: 200;
-    border: none;
-    height: 100vh;
-    width: 100%;
-    top: 0; }
-    @media (min-width: 1200px) {
-      body.v2 .intro, body.books .intro {
-        border: 3px solid slateblue;
-        height: calc(100vh - 40px);
-        top: 20px;
-        width: calc(100% - 40px); } }
-    body.v2 .intro .intro-text .what, body.books .intro .intro-text .what {
-      border-right: 2px solid;
-      line-height: 1;
-      margin-right: 10px;
-      padding-right: 10px; }
-  @media (max-width: 600px) {
-    body.v2 .intro .intro-text .what, body.v2 .intro .intro-text .where, body.books .intro .intro-text .what, body.books .intro .intro-text .where {
-      margin: 0;
-      padding: 0;
-      border: none;
-      display: block;
-      line-height: 1.5; } }
-  @media (max-width: 450px) {
-    body.v2 .intro, body.books .intro {
-      padding: 50px 0; }
-      body.v2 .intro h1, body.books .intro h1 {
-        font-size: 1.8em; }
-      body.v2 .intro h2, body.books .intro h2 {
-        font-size: 1.3em; } }
   body.v2 h1, body.books h1 {
-    font-family: 'Roboto Slab', serif;
+    font-family: "Roboto Slab", serif;
     font-size: 2.5em;
     font-weight: lighter;
     margin-top: 0;
     text-align: center; }
   body.v2 h2, body.v2 h3, body.books h2, body.books h3 {
     color: slateblue;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: "Nanum Gothic", sans-serif;
     text-align: center; }
   body.v2 h2, body.books h2 {
     font-size: 1.67em;
@@ -91,11 +32,33 @@ body.v2, body.books {
     position: fixed;
     right: 10px;
     top: 10px;
-    z-index: 50; }
-    body.v2 .contact-fixed.hidden, body.books .contact-fixed.hidden {
-      display: none; }
+    z-index: 5000; }
   body.v2 .contact-static, body.books .contact-static {
+    display: none;
     margin: 30px auto 0; }
+  body.v2 .intro, body.books .intro {
+    background: linear-gradient(-45deg, rgba(235, 230, 250, 0.7) 50%, rgba(100, 149, 237, 0.7) 100%);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 200; }
+    @media (min-width: 1200px) {
+      body.v2 .intro, body.books .intro {
+        border: 3px solid slateblue;
+        height: calc(100vh - 40px);
+        top: 20px;
+        width: calc(100% - 40px); } }
+    body.v2 .intro .intro-text .what, body.books .intro .intro-text .what {
+      border-right: 2px solid;
+      line-height: 1;
+      margin-right: 10px;
+      padding-right: 10px; }
   body.v2 section:not(.intro), body.v2 footer, body.books section:not(.intro), body.books footer {
     box-sizing: border-box;
     margin: 10vh auto 0;
@@ -121,9 +84,8 @@ body.v2, body.books {
     body.v2 section.showcase figure, body.books section.showcase figure {
       margin: 0 auto; }
       body.v2 section.showcase figure .image, body.books section.showcase figure .image {
-        width: 600px;
-        background-size: cover;
         background-position: center;
+        background-size: cover;
         max-width: 100%;
         position: relative;
         width: 600px;
@@ -135,8 +97,8 @@ body.v2, body.books {
       body.v2 section.showcase figure .image2, body.books section.showcase figure .image2 {
         position: absolute;
         right: 20px;
-        z-index: 1;
-        top: 3rem; }
+        top: 3rem;
+        z-index: 1; }
         body.v2 section.showcase figure .image2:hover, body.books section.showcase figure .image2:hover {
           z-index: 20; }
     @media (max-width: 750px) {
@@ -144,15 +106,29 @@ body.v2, body.books {
         height: auto;
         min-height: 100vh; }
         body.v2 section.showcase figure .image.image1, body.v2 section.showcase figure .image.image2, body.books section.showcase figure .image.image1, body.books section.showcase figure .image.image2 {
-          position: static;
-          margin: 0 auto 20px; }
+          margin: 0 auto 20px;
+          position: static; }
         body.v2 section.showcase .text, body.books section.showcase .text {
           position: static; } }
   body.v2 section.resume, body.books section.resume {
     margin: 4em auto 2em; }
   body.v2 footer, body.books footer {
-    text-align: right;
-    margin-bottom: 2em; }
+    margin-bottom: 2em;
+    text-align: right; }
+  @media (max-width: 600px) {
+    body.v2 .intro .intro-text .what, body.v2 .intro .intro-text .where, body.books .intro .intro-text .what, body.books .intro .intro-text .where {
+      margin: 0;
+      padding: 0;
+      border: none;
+      display: block;
+      line-height: 1.5; } }
+  @media (max-width: 450px) {
+    body.v2 .intro, body.books .intro {
+      padding: 50px 0; }
+      body.v2 .intro h1, body.books .intro h1 {
+        font-size: 1.8em; }
+      body.v2 .intro h2, body.books .intro h2 {
+        font-size: 1.3em; } }
 
 body.books .intro .intro-par {
   color: slateblue;
