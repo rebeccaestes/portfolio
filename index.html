@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rebecca G. Estes</title>
+  <title>Rebecca Goldstein</title>
   <meta name="description" content="portfolio of web developer, Rebecca Estes">
   <meta name="robots" content="index, follow">
-  <meta name="author" content="Rebecca G. Estes">
+  <meta name="author" content="Rebecca Goldstein">
   <meta name="viewport" content="initial-scale=1.0, width=device-width" user-scaleable="yes">
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Rebecca G. Estes">
@@ -14,7 +14,7 @@
   <meta property="profile:last_name" content="Estes">
 
 <!--   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300|Dosis:400,200,300|Exo:400,100' rel='stylesheet' type='text/css'> -->
-  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto+Slab|Source+Sans+Pro:400,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto+Slab|Hanken+Grotesk|Source+Sans+Pro:400,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
 
@@ -24,7 +24,6 @@
   <div class="contact contact-fixed hidden">     
     <a href="mailto:estes.rebecca@gmail.com"><i class="fa fa-envelope"></i></a>
     <a href="https://www.linkedin.com/in/restes"><i class="fa fa-linkedin-square"></i></a>
-    <a href="http://www.twitter.com/calamity"><i class="fa fa-twitter-square"></i></a>
     <a href="https://github.com/rebeccaestes"><i class="fa fa-github-square"></i></a>
   </div>
 
@@ -32,8 +31,9 @@
   <!-- <div class="triangle triangle-right"></div> -->
   <section class="intro">
     <div class="intro-text">
-      <h1>Rebecca G. Estes</h1>
-      <h2><span class="what">Front End Developer</span><span class="where">Washington, DC</span></h2>
+      <h1>Rebecca Goldstein</h1>
+      <p>Web developer with 10 years of experience building sites for federal agencies, museums and public affairs clients
+      </p>
     </div>
     <div class="contact contact-static">     
       <a href="mailto:estes.rebecca@gmail.com"><i class="fa fa-envelope"></i></a>
@@ -43,32 +43,89 @@
     </div>
   </section>
   <!-- </div> -->
+  <div class="header"><h2>Case Studies</h2></div>
 
 <section class="showcase inviewable">
   <figure>
     <!-- <div class="image image1" style="background-image: url('images/nmai.png')"></div> -->
-    <div class="image image1">
-      <a class="project-link" target="_blank" href="https://americanindian.si.edu">
-        <img src="images/nmai.png" alt="National Museum of the American Indian website" />
+    <div class="image single-image">
+      <a class="project-link" target="_blank" href="https://teamavoq.com/">
+        <img src="images/avoq.png" alt="Avoq: About Us" />
       </a>
     </div>
-    <div class="image image2">
-      <a class="project-link" target="_blank" href="https://americanindian.si.edu/nk360/plains-belonging-kinship/oceti-sakowin.cshtml">
-        <img src="images/nk360.png" alt="Native Knowledge 360: Kinship in the Oceti Sakowin Nation" />
-      </a>
-      </div>
     
   </figure>
   
   <div class="text">
-    <h3>The Smithsonian</h3>
-    <p class="dates">May 2017&ndash;September 2019</p>
-    <p>
-      I was the sole front-end developer for the National Museum of the American Indian for two years. I built educational pages for middle and high school students as part of the Native Knowledge 360&deg; initiative, and introduced responsive design and mobile support to our homepage. I worked with Wordpress and Drupal 7 and remediated several legacy sites.
+    <h3>Avoq</h3>
+    <h4>Showing the full range of a firm's work</h4>
+    <p><strong>Problem:</strong> Avoq's new CEO, comparing the site with peer agencies, felt it didn't show the full range of what the firm does: strategic communications, government relations and advertising.</p>
+    <p><strong>Approach:</strong> Working from our in-house designers' designs, I built the About page, the Careers page and a dedicated page for each of the firm's three practice areas: Strategic Communications, Government Relations and Advertising. I built the pages in Gutenberg, so the marketing team can add and update pages with blocks, and I configured scroll animations to match the new design.</p>
+    <p><strong>Outcome:</strong> The new pages launched in September 2026, giving each practice area its own page that the marketing team can update without developer help.</p>
+    <p><strong>Built with:</strong> WordPress, Gutenberg, ACF, PHP, JavaScript, CSS/Sass</p>
   </div>
 </section>
 
 <section class="showcase inviewable">
+  <figure>
+    <!-- <div class="image image1" style="background-image: url('images/nmai.png')"></div> -->
+    <div class="image single-image">
+      <a class="project-link" target="_blank" href="https://fulbrightprogram.org/">
+        <img src="images/fulbright.png" alt="Fulbright Program" />
+      </a>
+    </div>
+    
+  </figure>
+  
+  <div class="text">
+    <h3>Fulbright Program</h3>
+    <h4>Giving editors control of their own pages</h4>
+    <p><strong>Problem:</strong> Fulbright's editors already used blocks in posts, but the rest of the site still ran on fixed ACF templates. Any layout change on those pages meant a request to me, so the developer became a bottleneck for routine updates.</p>
+    <p><strong>Approach:</strong> At the client's request, I moved the remaining pages to the Gutenberg block editor. I turned the existing ACF templates into custom blocks with ACF fields, so editors kept the familiar fields but could arrange them freely, while preset brand colors, fonts and spacing kept every page on-brand. I also built a private reference library, visible only to logged-in users, that showed every custom block in use, and set up redirects alongside WordPress's automatic ones so existing links kept working.</p>
+    <p><strong>Outcome:</strong> Editors could change page layouts themselves instead of asking a developer for each change.</p>
+    <p><strong>Built with:</strong> WordPress, Gutenberg, ACF, PHP, Sass</p>
+  </div>
+</section>
+
+<section class="showcase inviewable">
+  <figure>
+    <!-- <div class="image image1" style="background-image: url('images/nmai.png')"></div> -->
+    <div class="image single-image">
+      <a class="project-link" target="_blank" href="https://web.archive.org/web/20190414162823/https://americanindian.si.edu/nnavm/">
+        <img src="images/nnavm.png" alt="National Native American Veterans Memorial" />
+      </a>
+    </div>
+    
+  </figure>
+  
+  <div class="text">
+    <h3>National Native American Veterans Memorial</h3>
+    <h4>A website for a national design competition</h4>
+    <p><strong>Problem:</strong> Congress commissioned the National Museum of the American Indian to build a memorial to Native American veterans on the National Mall, and the design was chosen through an international competition. The museum needed a public website to launch the competition, guide entrants to a vendor-run submission system, and later present the finalists and the winning design.</p>
+    <p><strong>Approach:</strong> I built the competition site in WordPress and worked with the museum's submission vendor on how the site connected to their system. I was responsible for every update to the site through 2019, adding pages as the competition moved from open call to finalists to the jury's decision, including the finalists' designs, the jurors, the advisory committee and the winning design.</p>
+    <p><strong>Outcome:</strong> The competition drew more than 120 proposals from around the world, and the jury selected Harvey Pratt's Warriors' Circle of Honor in June 2018.</p>
+    <p><strong>Built with:</strong> WordPress, HTML, Sass, JavaScript</p>
+    <p><a target="_blank" href="https://web.archive.org/web/20190414162823/https://americanindian.si.edu/nnavm/">View the archived site</a></p>
+  </div>
+</section>
+
+<div class="header"><h2>Experience</h2></div>
+
+<section class="experience">
+  <p><strong>Avoq</strong> (formerly Subject Matter) · 01/20-10/26<br />
+WordPress and Drupal sites for government, nonprofit, association and corporate clients. </p>
+
+<p><strong>Smithsonian National Museum of the American Indian</strong> · 05/17-09/16<br />
+Sole full-time developer; led the responsive site redesign. Case study: National Native American Veterans Memorial.</p>
+
+<p><strong>Elucid Solutions</strong> · 04/16–05/17<br />
+Drupal 8 sites for federal agencies.</p>
+
+ <p class="content"><strong><a href="resume.pdf" target="_blank">Download my resume</a></strong> for further details.</p>
+
+</section>
+
+<!-- <section class="showcase inviewable">
   <figure>
     <div class="image image1">
       <a class="project-link" target="_blank" href="https://www.achp.gov">
@@ -89,63 +146,13 @@
       I spent a year as part of a team of two developers and one designer at Elucid Solutions, building and maintaining Drupal 8 websites for federal government agencies.
     </p>
   </div>
-</section>
+</section> -->
 
-<section class="resume">
-    <!-- <h3>Experience</h3> -->
 
-<!--       <ul>
-        <li>National Museum of the American Indian, Front-End Developer</li>
-        <li>Elucid Solutions, Web Developer</li>
-        <li>RP3 Agency, Front-End Contractor</li>
-        <li>General Assembly, Web Development Immersive graduate</li>
-        <li>NAFSA: Association for International Educators, Web Systems Manager</li>
-        <li>The American Prospect, Publishing Fellow</li>
-        <li>Pew Charitable Trusts, Web Intern & Contractor</li>
-        <li>Barnard College, B.A. cum laude in political science</li>
-      </ul> -->
-    <!-- </div> -->
-
-    <p class="content"><strong><a href="resume.pdf" target="_blank">Download my resume</a></strong> for further details.</p>
-  </section>
-
-<!--   <div class="shaded-bg hidden">
-    <section class="category">
-      <h2>Misc.</h2>
-      <div class="content">
-        <p>In my free time, I go to a lot of concerts, patronize the DC public libraries, and subscribe to more podcasts than I can keep up with.</p>
-        <p>When I'm in the Himalayas, I photograph <a href="#" class="kitten-link">sleeping kittens</a>; at home, I try to catch <a href="#" class="ziggy-link">Ziggy, my adopted beagle</a>, during the rare moment he's not in motion.<p>
-      </div>
-
-      <div class="kitten">
-        <i class="fa fa-times kitten-close"></i>
-        <img src="images/kitten.jpg" alt="meow" class="photo">
-      </div>
-
-      <div class="ziggy">
-        <i class="fa fa-times ziggy-close"></i>
-        <img src="images/ziggy.jpg" alt="woof" class="photo">
-      </div>
-    </div>
-  </section>
-
-  <div class="holder holder-2 hidden">
-    <div class="outro">
-      <section class="category">
-        <h2>Let's talk</h2>
-        <span class="contact">       
-            <a href="mailto:estes.rebecca@gmail.com"><i class="fa fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/restes"><i class="fa fa-linkedin-square"></i></a>
-            <a href="http://www.twitter.com/calamity"><i class="fa fa-twitter-square"></i></a>
-            <a href="https://github.com/rebeccaestes"><i class="fa fa-github-square"></i></a>
-        </span></h2>
-      </section>
-    </div>
-  </div> -->
 
   <footer class="hidden shaded-bg">
     <div class="category">
-      &copy; 2019 Rebecca G. Estes | <a href="books.html">Booklist</a>, just for fun
+      &copy; 2026 Rebecca Goldstein
     </div>
  </footer>
 
